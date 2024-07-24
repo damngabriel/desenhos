@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cartoon Network</title>
+</head>
+<body>
+   
+    <div class="circulo"></div>
+    <div class="logo">
+    <img src="./img/cartoon.png" alt="logo tipo">
+    </div>
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h2>Não é só uma animação é uma <span>Nostalgia</span></h2>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, explicabo, illum magnam qui ad reprehenderit aperiam accusantium incidunt laudantium a unde dolore iusto eos delectus! Aut voluptatibus illum impedit vitae?
+            </p>
+            <button> Deixe seu Like!</button>
+        </div>
+        <div class="caixa-imagem">
+            <img src="./img/colorido.png" alt="logo" class="desenho">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./img/mordecai.png" alt="desenho 1" class="desenho-pequeno mordecai">
+        <img src="./img/finn.png" alt="desenho 2" class="desenho-pequeno finn">
+        <img src="./img/ben.png" alt="desenho 3" class="desenho-pequeno ben">
+    </div>
+    
+</body>
+    <script>
+        let circulo = document.querySelector(".circulo")    
+        let copogrande = document.querySelector(".desenho")
+        let original = document.querySelector(".logo")
+        let roxo = document.querySelector(".mordecai")
+        let azul = document.querySelector(".finn")
+        let verde = document.querySelector(".ben")
+
+        original.addEventListener("click", ()=>{
+            copogrande.src = "./img/colorido.png"
+             copogrande.style.width = "350px"
+            circulo.style.background = "#000000"
+        })
+
+        roxo.addEventListener("click", ()=>{
+            copogrande.src = "./img/mordecai.png"
+            copogrande.style.width = "450px"
+            circulo.style.background = "#510948"
+        })
+
+        azul.addEventListener("click", ()=>{
+            copogrande.src = "./img/finn.png"
+             copogrande.style.width = "300px"
+            circulo.style.background = "#1ebeea"
+        })
+
+        verde.addEventListener("click", ()=>{
+            copogrande.src = "./img/ben.png"
+             copogrande.style.width = "200px"
+            circulo.style.background = "#61c13d"
+
+
+        })
+    </script>
+</html>
